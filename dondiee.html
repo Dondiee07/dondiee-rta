@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTA Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f30a0a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #797474;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #f7f4f4;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        main {
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .flex-container > div {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <header>
+        <img src="gov of dubai.jpg" alt="RTA Logo" height="100" width="750">
+        <h1>RTA - Road Traffic Authority</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <main>
+        <h2><marquee>Welcome to RTA </marquee></h2>
+        <p>This website provides information about road traffic rules, services offered by the Road Traffic Authority, and how to contact us for inquiries.</p>
+        <p>Feel free to navigate through the menu above to explore the website.</p>
+        
+        <h3>Our Services </h3>
+        <p>Transportation, Salik, Fines ,Nol</p>
+
+     
+        <h4> Choose the Nol card that suits you</h4> 
+        <img src="gold card.jpg" alt="RTA Logo" height="100" width="250">
+        <h5> 
+            <button class="button" onclick="window.location.href='gold_card_info.html'">Know more</button>
+        </h5> 
+        <p>Gold</p>
+
+        <img src="Blue-Nol-Card.jpg" alt="RTA Logo" height="100" width="250">
+        <h5> 
+            <button class="button" onclick="window.location.href='blue_nol.html'">Know more</button>
+        </h5> 
+        <p>Blue</p>
+
+        <img src="silver nol.jpg" alt="RTA Logo" height="100" width="250">
+        <h5> 
+            <button class="button" onclick="window.location.href='silver-_card.html'">Know more</button>
+        </h5> 
+        <p>Silver</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 RTA - Road Traffic Authority. All Rights Reserved.</p>
+    </footer>
+
+    <div class="flex-container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <script>
+        // Function to handle the click event of the "Know more" button for the gold card
+        function handleGoldCardClick() {
+            // Redirect the user to another page providing more information about the Gold Nol card
+            window.location.href = "gold_card_info.html";
+        }
+    </script>
+</body>
+</html>
